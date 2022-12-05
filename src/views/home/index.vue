@@ -2,7 +2,7 @@
     <div class="home-container">
         <!-- 导航栏 -->
         <van-nav-bar class="page-nav-bar" fixed>
-            <van-button class="search-btn" slot="title" type="info" size="small" round icon="search">搜索</van-button>
+            <van-button class="search-btn" slot="title" type="info" size="small" round icon="search" to="/search">搜索</van-button>
         </van-nav-bar>
         <!-- 频道列表 -->
         <!-- 通过v-model绑定当前激活标签对应得索引值，默认情况下启用第一个标签 -->

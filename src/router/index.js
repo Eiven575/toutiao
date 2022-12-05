@@ -17,7 +17,10 @@ const routes = [
       { path: '/video', name: 'video', component: () => import('@/views/video') },
       { path: '/my', name: 'my', component: () => import('@/views/my') }
     ]
-  }
+  },
+  { path: '/search', name: 'search', component: () => import('@/views/search') },
+  // 动态路由 开启props传参 将路由参数映射到article组件中
+  { path: '/article/:articleId', name: 'article', component: () => import('@/views/article'), props: true }
 ]
 
 const router = new VueRouter({

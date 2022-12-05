@@ -23,7 +23,9 @@ module.exports = {
             },
             // 配置要转换的css属性
             // *表示所有
-            propList: ['*']
+            propList: ['*'],
+            // 排除不需要转换rem的样式资源
+            exclude: 'github-markdown'
         }
     }
 }
