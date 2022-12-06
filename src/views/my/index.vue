@@ -5,10 +5,10 @@
             <div class="base-info">
                 <div class="left">
                     <van-image round fit="cover" class="avatar" :src="userInfo.photo" />
-                    <span class="text">{{userInfo.name}}</span>
+                    <span class="text">{{ userInfo.name }}</span>
                 </div>
                 <div class="right">
-                    <van-button round class="edit-btn" type="default">编辑资料</van-button>
+                    <van-button round class="edit-btn" type="default" to="/user/profile">编辑资料</van-button>
                 </div>
             </div>
             <div class="data-stats">

@@ -20,7 +20,8 @@ const routes = [
   },
   { path: '/search', name: 'search', component: () => import('@/views/search') },
   // 动态路由 开启props传参 将路由参数映射到article组件中
-  { path: '/article/:articleId', name: 'article', component: () => import('@/views/article'), props: true }
+  { path: '/article/:articleId', name: 'article', component: () => import('@/views/article'), props: true },
+  { path: '/user/profile', name: 'user-profile', component: () => import('@/views/user-profile') }
 ]
 
 const router = new VueRouter({
